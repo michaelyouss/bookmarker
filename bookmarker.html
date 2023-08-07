@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>bookmarker</title>
+</head>
+
+<body>
+
+    <section class="container">
+        <h2 class=" my-3 text-center m-auto  border-1 border-bottom border-black text-secondary">bookmarker</h2>
+
+        <div class="bg-secondary-subtle mt-5 rounded-2">
+            <h2 class="text-center py-2 text-secondary">Bookmark your favoret site</h2>
+            <div class="my-2 p-2">
+                <label class="text-center w-100 p-2" for="siteName">Site Name</label>
+                <input id="siteName" type="text" class="form-control" placeholder="Bookmark Name">
+            </div>
+            <div class="my-2 p-2">
+                <label class="text-center w-100 p-2" for="sitUrl">Sity Url</label>
+                <input id="sitUrl" type="text" class="form-control" placeholder="website URL">
+            </div>
+
+            <div class="text-center p-3">
+                <button id="btn" disabled class="btn btn-primary text-center m-auto" onclick="addSit()">submit</button>
+            </div>
+
+
+        </div>
+        <div class="">
+            <input id="sears" onkeyup="search(this.value)" type="text" class="form-control my-4" placeholder="search by bookmark name">
+        </div>
+
+
+        <div class="output">
+            <table class="table m-auto text-center ">
+                <thead class="">
+                    <!-- <tr class="">
+                        <th class="bg-secondary-subtle"></th>
+                        <th class="bg-secondary-subtle"></th>
+                        <th class="bg-secondary-subtle"></th>
+                        <th class="bg-secondary-subtle"></th>
+
+                      
+                    </tr> -->
+                </thead>
+                <tbody id="tab">
+
+                </tbody>
+            </table>
+        </div>
+
+    </section>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/mean.js"></script>
+</body>
+
+</html>
