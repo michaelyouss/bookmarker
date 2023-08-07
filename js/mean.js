@@ -126,7 +126,7 @@ function search(sea){
     // console.log(sea);
     var searBook=[]
     for (let i = 0; i < bookAra.length; i++) {
-       if(bookAra[i].name.toLowerCase().includes(sea)){
+       if(bookAra[i].name.toLowerCase().includes(sea.toLowerCase())){
         searBook.push(bookAra[i])
        }
         
